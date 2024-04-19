@@ -1,0 +1,56 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import Badge from '../components/Badge.astro';
+import SectionContainer from '../components/SectionContainer.astro'
+import LinkedInIcon from '../components/icons/LinkedInIcon.astro'
+import GitHubIcon from '../components/icons/GitHubIcon.astro'
+import SocialPill from '../components/SocialPill.astro'
+import MailIcon from '../components/icons/MailIcon.astro';
+import Experience from '../components/Experience.astro';
+import BriefcaseIcon from '../components/icons/BriefcaseIcon.astro';
+---
+
+<Layout 
+	title="MigTap - Back-End Programmer / Developer | Application Support Engineer"
+	description="Dexterous Application Support Engineer and Back-End Developer with +4 years of experience. Knowledgeable about PowerShell and Unix/Bash Scripting and Python web and API development."
+>
+	<main>
+		<SectionContainer class="py-44 pb-22">
+			<h2 class="text-5xl font-bold flex flex-row gap-x-4 pb-4">
+				Hey, I'm Miguel Tapia 
+				<div class="flex justify-center items-center">
+					<Badge>Open to Work</Badge>
+				</div>
+			</h2> 
+			<h3 class="text-2xl text-wrap">
+				<span>Based in <span class="text-blue-200/90">Queretaro, México</span>. +4 years of experience as App Support Engineer,
+					 looking for a fresh start as <span class="text-yellow-200/90">Full Stack</span> Developer</span>.
+			</h3>
+
+			<nav class="flex gap-x-2 py-6">
+				<SocialPill href="https://www.linkedin.com/in/migtap/">
+					<LinkedInIcon class="size-6"/>
+					LinkedIn
+				</SocialPill>
+				<SocialPill href="https://github.com/MigTap">
+					<GitHubIcon class="size-6"/>
+					GitHub
+				</SocialPill>
+				<SocialPill href="mailto:mig.tap.1998@gmail.com">
+					<MailIcon class="size-6"/>
+					mig.tap.1998@gmail.com
+				</SocialPill>
+			</nav>
+		</SectionContainer>
+		<SectionContainer id="experience">
+			<h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
+				<BriefcaseIcon class="size-7"/>
+				Professional Experience
+			</h2>
+			<Experience />
+		</SectionContainer>
+	</main>
+</Layout>
+
+
